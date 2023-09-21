@@ -31,4 +31,12 @@ mod tests {
         assert!(lyrc.is_ok());
         assert_eq!(lyrc.unwrap().title.deref(), "Only For The Weak")
     }
+    #[tokio::test]
+    async fn fetch_lyrics_ta() {
+        let cnt = MusixClient::new();
+        let lyrc = cnt.fetch_lyrics_ta("Only for the Weak", "In Flames").await;
+        println!("{:?}", lyrc);
+        assert!(lyrc.is_ok());
+        assert_eq!(lyrc.unwrap().title.deref(), "Only For The Weak")
+    }
 }

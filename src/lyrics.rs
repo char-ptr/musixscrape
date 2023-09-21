@@ -1,4 +1,4 @@
-use std::{cell::OnceCell, str::FromStr, sync::Arc};
+use std::{str::FromStr, sync::Arc};
 
 use chrono::NaiveDate;
 use scraper::Selector;
