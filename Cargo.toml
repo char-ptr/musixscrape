@@ -1,0 +1,13 @@
+[package]
+name = "musixscrap"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scraper = "0.17.1"
+reqwest = "0.11.20"
+tokio = { version = "1.32.0", features = ["full"] }
+chrono = "0.4.31"
+thiserror = "1.0.48"
